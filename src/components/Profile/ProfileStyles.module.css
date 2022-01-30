@@ -1,0 +1,79 @@
+.profile {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  width: 600px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+
+.avatar {
+  display: block;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.name {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.tag {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.location {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 50px;
+}
+
+.stats > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70px;
+  width: 200px;
+  border: 1px solid rgb(143, 119, 119);
+  background-color: rgb(231, 236, 242);
+}
