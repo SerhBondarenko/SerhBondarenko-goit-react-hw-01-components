@@ -5,9 +5,7 @@ import s from '../Profile/ProfileStyles.module.css';
 
 export default function Profile(props) {
   const {
-    likes,
-    views,
-    followers,
+    stats,
     avatar,
     location = 'не известно',
     tag,
@@ -25,15 +23,15 @@ export default function Profile(props) {
       <ul className={s.stats}>
         <li>
           <span className={s.label}>Follovers</span>
-          <span className={s.quantity}>{followers}</span>
+          <span className={s.quantity}>{stats.followers}</span>
         </li>
         <li>
           <span className={s.label}>Views</span>
-          <span className={s.quantity}>{views}</span>
+          <span className={s.quantity}>{stats.views}</span>
         </li>
         <li>
           <span className={s.label}>Likes</span>
-          <span className={s.quantity}>{likes}</span>
+          <span className={s.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
@@ -42,9 +40,7 @@ export default function Profile(props) {
 //================================ propTypes =================
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
-  likes: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  followers: PropTypes.number.isRequired,
+  stats: PropTypes.objectOf(PropTypes.number).isRequired,
   location: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   username: PropTypes.string.isRequired,
